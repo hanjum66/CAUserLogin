@@ -33,4 +33,9 @@ public interface LoginUserDataAccessInterface {
      */
     User get(String username);
 
+    /**
+     * Returns the username of the currently logged-in user.
+     * @return the username of the logged-in user, or null if no user is logged in
+     */
+    String getCurrentUser();
 }

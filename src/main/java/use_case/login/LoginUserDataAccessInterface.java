@@ -8,6 +8,12 @@ import entity.User;
 public interface LoginUserDataAccessInterface {
 
     /**
+     * Set the currently logged-in user.
+     * @param name the username of the logged-in user
+     */
+    void setCurrentUser(String name);
+
+    /**
      * Checks if the given username exists.
      * @param username the username to look for
      * @return true if a user with the given username exists; false otherwise
